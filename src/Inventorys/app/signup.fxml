@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="700.0" style="-fx-background-color: #562349;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Inventorys.controllers.LoginSignupController">
+    <children>
+        <Pane layoutX="345.0" layoutY="10.0" prefHeight="371.0" prefWidth="314.0" style="-fx-background-color: #f37121;">
+            <children>
+                <Button fx:id="signUp" layoutX="106.0" layoutY="244.0" mnemonicParsing="false" onAction="#onSignup" prefHeight="30.0" prefWidth="120.0" style="-fx-background-color: #6a097d;" text="SignUp" textFill="WHITE">
+                    <font>
+                        <Font name="Charter Roman" size="14.0" />
+                    </font>
+                </Button>
+                <TextField fx:id="userSignup" alignment="CENTER" layoutX="78.0" layoutY="89.0" promptText="Username">
+                    <font>
+                        <Font name="Charter Roman" size="14.0" />
+                    </font>
+                </TextField>
+                <TextField fx:id="userEmail" alignment="CENTER" layoutX="79.0" layoutY="137.0" promptText="Email">
+                    <font>
+                        <Font name="Charter Roman" size="14.0" />
+                    </font>
+                </TextField>
+                <PasswordField fx:id="userPwd" alignment="CENTER" layoutX="79.0" layoutY="187.0" promptText="Password">
+                    <font>
+                        <Font name="Charter Roman" size="14.0" />
+                    </font>
+                </PasswordField>
+                <Label layoutX="129.0" layoutY="29.0" text="Signup" textFill="WHITE">
+                    <font>
+                        <Font name="Charter Roman" size="24.0" />
+                    </font>
+                </Label>
+                <Hyperlink fx:id="linkLogin" alignment="CENTER" layoutX="222.0" layoutY="292.0" onAction="#onLoginLink" text="Login" textFill="WHITE">
+                    <font>
+                        <Font size="14.0" />
+                    </font>
+                </Hyperlink>
+                <Label layoutX="51.0" layoutY="295.0" prefHeight="18.0" prefWidth="180.0" text="Not Have Account Already ...." textFill="WHITE">
+                    <font>
+                        <Font size="14.0" />
+                    </font>
+                </Label>
+                <Label fx:id="alertDanger" layoutX="141.0" layoutY="222.0" text="invalid Input" textFill="WHITE" visible="false">
+                    <font>
+                        <Font name="Charter Roman" size="14.0" />
+                    </font>
+                </Label>
+            </children>
+        </Pane>
+        <Label alignment="CENTER" layoutX="2.0" layoutY="184.0" prefHeight="32.0" prefWidth="314.0" text="MidNight7  Styles Inventory" textFill="WHITE">
+            <font>
+                <Font name="Charter Roman" size="18.0" />
+            </font>
+        </Label>
+        <Label alignment="CENTER" layoutX="78.0" layoutY="187.0" prefHeight="84.0" prefWidth="152.0" text="New World For Syles" textFill="WHITE">
+            <font>
+                <Font name="Charter Roman" size="14.0" />
+            </font>
+        </Label>
+        <ImageView fitHeight="150.0" fitWidth="190.0" layoutX="80.0" layoutY="42.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../images/iconfinder_inventory-maintenance_49590.png" />
+            </image>
+        </ImageView>
+    </children>
+</AnchorPane>
